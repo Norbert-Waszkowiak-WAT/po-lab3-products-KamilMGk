@@ -2,10 +2,11 @@
 #define PAPER_PRODUCT
 #include "product.cpp"
 using namespace std;
-class Product {
+class PaperProduct : public Product {
     public:
-    virtual string getProductType ()=0;
-    virtual string getName ()=0;
+    string getProductType () override {
+        return "PaperProduct" ;
+    }
 };
 #endif
-}
+

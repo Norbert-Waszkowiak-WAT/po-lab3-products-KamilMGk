@@ -4,13 +4,11 @@
 using namespace std;
 class Supplier {
     private:
-    Shop shop;
+    Shop *shop;
     public:
-    Supplier(Shop* shop) {
+    Supplier(Shop* shop) : shop(shop){}
+    void deliverProduct(Product* product){
+    shop -> addToStore(product);
     }
-    void deliverProduct(Product* product) {
-       
-    }
- 
 };
 #endif

@@ -1,10 +1,11 @@
-#ifndef MINERAL_WATER 
+#ifndef MINERAL_WATER
 #define MINERAL_WATER
 #include "food_product.cpp"
 using namespace std;
-class MineralWater : public FoodProduct {
+ 
+class MineralWater : public FoodProduct{
     public:
-    string getName () override{
+    string getName() override{
         return "MineralWater";
     }
 };
